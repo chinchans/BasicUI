@@ -40,7 +40,7 @@ def home():
     message = None
     if request.method == "POST":
         name = request.form.get("name", "").strip() or "there"
-        message = f"Hello, {name}! Welcome to NextGen Team. "
+        message = f"Hello, {name}! Welcome to NextGenR&D Team. "
     return render_template_string(PAGE, message=message)
 
 if __name__ == "__main__":
