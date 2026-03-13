@@ -40,10 +40,11 @@ def home():
     message = None
     if request.method == "POST":
         name = request.form.get("name", "").strip() or "there"
-        message = f"Hello, {name}! Welcome to NextGenR&D Team. "
+        message = f"Hello, {name}! Welcome to ODC-1 "
     return render_template_string(PAGE, message=message)
 
 if __name__ == "__main__":
     # Bind to 0.0.0.0 so it's reachable from the container port mapping
     app.run(host="0.0.0.0", port=8000, debug=False)
+
 
